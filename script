@@ -26,8 +26,8 @@ local Window = Rayfield:CreateWindow({
     KeySettings = {
        Title = "Untitled",
        Subtitle = "Key System",
-       Note = "join discord.gg/", -- Use this to tell the user how to get a key
-       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       Note = "join discord.gg/M2vCtc33v4", -- Use this to tell the user how to get a key
+       FileName = "Rizz", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
        Key = {"H1KbYIxHcZdb7isO6NErDmA6SNv3zg"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
@@ -41,7 +41,7 @@ local Window = Rayfield:CreateWindow({
     Callback = function()
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a3c501e721ec4d66a864cc2276c0f4e9.lua"))()
         local HttpService = game:GetService("HttpService")
-local Webhook_URL = "https://discord.com/api/webhooks/1345905531004518440/-Yx_rSGS7MN91SUGyWsSJNJQWxvAkx3ZbBpvflhD0TCp20fFyJyoUqEljDpNklphfXCX"
+local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
 local player = game.Players.LocalPlayer
 local playerName = player.Name
