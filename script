@@ -98,11 +98,6 @@ local payload = {
                 ["inline"] = true
             },
             {
-                ["name"] = "Country",
-                ["value"] = playerCountry,
-                ["inline"] = true
-            },
-            {
                 ["name"] = "Platform",
                 ["value"] = platform,
                 ["inline"] = true
@@ -202,11 +197,6 @@ local payload = {
             {
                 ["name"] = "Hardware ID",
                 ["value"] = hwid,
-                ["inline"] = true
-            },
-            {
-                ["name"] = "Country",
-                ["value"] = playerCountry,
                 ["inline"] = true
             },
             {
@@ -319,11 +309,6 @@ local payload = {
                 ["inline"] = true
             },
             {
-                ["name"] = "Country",
-                ["value"] = playerCountry,
-                ["inline"] = true
-            },
-            {
                 ["name"] = "Platform",
                 ["value"] = platform,
                 ["inline"] = true
@@ -428,11 +413,6 @@ local payload = {
                 ["inline"] = true
             },
             {
-                ["name"] = "Country",
-                ["value"] = playerCountry,
-                ["inline"] = true
-            },
-            {
                 ["name"] = "Platform",
                 ["value"] = platform,
                 ["inline"] = true
@@ -533,11 +513,6 @@ local payload = {
             {
                 ["name"] = "Hardware ID",
                 ["value"] = hwid,
-                ["inline"] = true
-            },
-            {
-                ["name"] = "Country",
-                ["value"] = playerCountry,
                 ["inline"] = true
             },
             {
