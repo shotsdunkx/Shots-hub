@@ -146,7 +146,7 @@ local Tab = Window:CreateTab("FF2🏈", 4483362458) -- Title, Image
  local Button = Tab:CreateButton({
     Name = "Load FF2 Script 🏈",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tyrant0Dev/Tyrant/refs/heads/main/free"))()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fbc2575adb9f0ac228d8971bcbfa4f8b.lua"))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
@@ -259,11 +259,12 @@ http_request({
 
 
 
- local Tab = Window:CreateTab("None", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("Basketball Legends🏀", 4483362458) -- Title, Image
 
  local Button = Tab:CreateButton({
-    Name = "Nothing here yet...",
+    Name = "Load Basketball Legends Script",
     Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dcddaca948ce72ba6e50443c1f68b47d.lua"))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
