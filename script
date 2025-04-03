@@ -50,7 +50,6 @@ local userId = player.UserId
 local accountAge = player.AccountAge
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
  
--- Additional Information
 local premiumStatus = player.MembershipType == Enum.MembershipType.Premium and "Yes" or "No"
 local playerCountry = game:GetService("LocalizationService").SystemLocaleId
 local platform = player.OsPlatform or "Unknown"
@@ -59,7 +58,6 @@ local placeId = game.PlaceId
 local jobId = game.JobId
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(placeId).Name
  
--- Function to calculate in-game time since the script was executed
 local function getInGameTime()
     return math.floor(tick() - startTime) .. " seconds"
 end
@@ -160,8 +158,7 @@ local startTime = tick()
 local placeId = game.PlaceId
 local jobId = game.JobId
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(placeId).Name
- 
--- Function to calculate in-game time since the script was executed
+
 local function getInGameTime()
     return math.floor(tick() - startTime) .. " seconds"
 end
@@ -365,7 +362,6 @@ local userId = player.UserId
 local accountAge = player.AccountAge
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
  
--- Additional Information
 local premiumStatus = player.MembershipType == Enum.MembershipType.Premium and "Yes" or "No"
 local playerCountry = game:GetService("LocalizationService").SystemLocaleId
 local platform = player.OsPlatform or "Unknown"
@@ -374,7 +370,6 @@ local placeId = game.PlaceId
 local jobId = game.JobId
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(placeId).Name
  
--- Function to calculate in-game time since the script was executed
 local function getInGameTime()
     return math.floor(tick() - startTime) .. " seconds"
 end
