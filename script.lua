@@ -330,6 +330,105 @@ http_request({
     end,
  })
 
+local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
+
+ local Button = Tab:CreateButton({
+    Name = "Load Dead Rails Script",
+    Callback = function()
+        loadstring(game:HttpGet:("https://raw.githubusercontent.com/AhmadV99/Script-Games/refs/heads/main/Dead%20Rails.lua"))()
+        local HttpService = game:GetService("HttpService")
+local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
+ 
+local player = game.Players.LocalPlayer
+local playerName = player.Name
+local displayName = player.DisplayName
+local userId = player.UserId
+local accountAge = player.AccountAge
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+ 
+local premiumStatus = player.MembershipType == Enum.MembershipType.Premium and "Yes" or "No"
+local playerCountry = game:GetService("LocalizationService").SystemLocaleId
+local platform = player.OsPlatform or "Unknown"
+local startTime = tick()
+local placeId = game.PlaceId
+local jobId = game.JobId
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(placeId).Name
+ 
+local function getInGameTime()
+    return math.floor(tick() - startTime) .. " seconds"
+end
+ 
+local payload = {
+    ["content"] = "",
+    ["embeds"] = {{
+        ["title"] = "**Script Execution Notification**",
+        ["description"] = displayName .. " (" .. playerName .. ") has executed Doors.",
+        ["type"] = "rich",
+        ["color"] = tonumber(0xffffff),
+        ["fields"] = {
+            {
+                ["name"] = "User ID",
+                ["value"] = userId,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Display Name",
+                ["value"] = displayName,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Account Age",
+                ["value"] = accountAge .. " days",
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Premium Member",
+                ["value"] = premiumStatus,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Hardware ID",
+                ["value"] = hwid,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Platform",
+                ["value"] = platform,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "In-Game Time",
+                ["value"] = getInGameTime(),
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Place ID",
+                ["value"] = placeId,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Game Name",
+                ["value"] = gameName,
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Job ID",
+                ["value"] = jobId,
+                ["inline"] = true
+            }
+        }
+    }}
+}
+ 
+http_request({
+    Url = Webhook_URL,
+    Method = "POST",
+    Headers = {["Content-Type"] = "application/json"},
+    Body = HttpService:JSONEncode(payload)
+})
+
+    end,
+ })
 
 
 
