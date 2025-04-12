@@ -331,7 +331,7 @@ local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
  local Button = Tab:CreateButton({
     Name = "Load Dead Rails Script",
     Callback = function()
-        loadstring(game:HttpGet:("https://raw.githubusercontent.com/AhmadV99/Script-Games/refs/heads/main/Dead%20Rails.lua"))()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/672a0ae340e8ce7e21a51e37c6bf0cc1.lua"))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
