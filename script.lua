@@ -1,73 +1,84 @@
-local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/main/source.lua", true))()
+local Window = Luna:CreateWindow({
+	Name = "Luna Example Window", -- This Is Title Of Your Window
+	Subtitle = nil, -- A Gray Subtitle next To the main title.
+	LogoID = "82795327169782", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
+	LoadingEnabled = true, -- Whether to enable the loading animation. Set to false if you do not want the loading screen or have your own custom one.
+	LoadingTitle = "Luna Interface Suite", -- Header for loading screen
+	LoadingSubtitle = "by Nebula Softworks", -- Subtitle for loading screen
 
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+	ConfigSettings = {
+		RootFolder = nil, -- The Root Folder Is Only If You Have A Hub With Multiple Game Scripts and u may remove it. DO NOT ADD A SLASH
+		ConfigFolder = "Shots Hub" -- The Name Of The Folder Where Luna Will Store Configs For This Script. DO NOT ADD A SLASH
+	},
 
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Shots Hub"
-   },
-
-   Discord = {
-      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "M2vCtc33v4", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
-   },
-
-   KeySystem = false, -- Set this to true to use our key system
-   KeySettings = {
-      Title = "Untitled",
-      Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
-      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"H1KbYIxHcZdb7isO6NErDmA6SNv3zg"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
-   }
+	KeySystem = false, -- As Of Beta 6, Luna Has officially Implemented A Key System!
+	KeySettings = {
+		Title = "Luna Example Key",
+		Subtitle = "Key System",
+		Note = "Best Key System Ever! Also, Please Use A HWID Keysystem like Pelican, Luarmor etc. that provide key strings based on your HWID since putting a simple string is very easy to bypass",
+		SaveInRoot = false, -- Enabling will save the key in your RootFolder (YOU MUST HAVE ONE BEFORE ENABLING THIS OPTION)
+		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		Key = {"Example Key"}, -- List of keys that will be accepted by the system, please use a system like Pelican or Luarmor that provide key strings based on your HWID since putting a simple string is very easy to bypass
+		SecondAction = {
+			Enabled = true, -- Set to false if you do not want a second action,
+			Type = "Link", -- Link / Discord.
+			Parameter = "" -- If Type is Discord, then put your invite link (DO NOT PUT DISCORD.GG/). Else, put the full link of your key system here.
+		}
+	}
 })
-
-local Tab = Window:CreateTab("Scripts", 4483362458) -- Title, Image
-
- local Button = Tab:CreateButton({
-    Name = "Fisch",
-    Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aa63ce25cd44fa60f0b155dcc3593445.lua"))()
-        local HttpService = game:GetService("HttpService")
-
- local Button = Tab:CreateButton({
-    Name = "Doors",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkDoorsKing/Clinet/main/DoorsRank"))()
-        local HttpService = game:GetService("HttpService")
-
- local Button = Tab:CreateButton({
-    Name = "Dead Rails",
-    Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/672a0ae340e8ce7e21a51e37c6bf0cc1.lua"))()
-        local HttpService = game:GetService("HttpService")
-
- local Button = Tab:CreateButton({
-    Name = "Murder Mystery 2",
-    Callback = function()
-        loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
-        local HttpService = game:GetService("HttpService")
-
- local Button = Tab:CreateButton({
-    Name = "Load Train To Fight Script",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/TraintoFight"))()
-        local HttpService = game:GetService("HttpService")
-
- local Button = Tab:CreateButton({
-     Name = "Basketball Legends",
-     Callback = function()
-         loadstring(game:HttpGet("https://pastefy.app/K8qxb4rn/raw", true))()
-         local HttpService = game:GetService("HttpService")
-    end,
+local Tab = Window:CreateTab({
+	Name = "Load Scripts",
+	Icon = "view_in_ar",
+	ImageSource = "Material",
+	ShowTitle = true
+})
+local Button = Tab:CreateButton({
+	Name = "Fisch",
+	Description = nil,
+    	Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aa63ce25cd44fa60f0b155dcc3593445.lua"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Doors",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkDoorsKing/Clinet/main/DoorsRank"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Dead Rails",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/672a0ae340e8ce7e21a51e37c6bf0cc1.lua"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "MM2",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Train To Fight",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/TraintoFight"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Train To Fight",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/TraintoFight"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Train To Fight",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/K8qxb4rn/raw", true))()
+    	end
 })
