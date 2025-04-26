@@ -69,6 +69,13 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
+	Name = "Chat Bypasser set language to Қазақ Тілі",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
+    	end
+})
+local Button = Tab:CreateButton({
 	Name = "Basketball Legends",
 	Description = nil, 
     	Callback = function()
