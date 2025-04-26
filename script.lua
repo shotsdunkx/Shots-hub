@@ -44,7 +44,7 @@ local Button = Tab:CreateButton({
 	Name = "Dead Rails",
 	Description = nil, 
     	Callback = function()
-      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/672a0ae340e8ce7e21a51e37c6bf0cc1.lua"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
     	end
 })
 local Button = Tab:CreateButton({
