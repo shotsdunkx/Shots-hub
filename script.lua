@@ -82,3 +82,10 @@ local Button = Tab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/IAmJamal10/Basketball/refs/heads/main/Legends"))()
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Muscle Legends",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet(('https://pastebin.com/raw/j3wU2wx0'),true))()
+    	end
+})
