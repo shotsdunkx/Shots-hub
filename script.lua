@@ -62,6 +62,13 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
+	Name = "Mic Up",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet('https://whimper.xyz/kitty'))()
+    	end
+})
+local Button = Tab:CreateButton({
 	Name = "Basketball Legends",
 	Description = nil, 
     	Callback = function()
