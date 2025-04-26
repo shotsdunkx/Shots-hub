@@ -34,13 +34,6 @@ local Tab = Window:CreateTab({
 	ShowTitle = true
 })
 local Button = Tab:CreateButton({
-	Name = "Fisch",
-	Description = nil,
-    	Callback = function()
-      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aa63ce25cd44fa60f0b155dcc3593445.lua"))()
-    	end
-})
-local Button = Tab:CreateButton({
 	Name = "Doors",
 	Description = nil, 
     	Callback = function()
