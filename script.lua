@@ -69,14 +69,7 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
-	Name = "Train To Fight",
-	Description = nil, 
-    	Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/TraintoFight"))()
-    	end
-})
-local Button = Tab:CreateButton({
-	Name = "Train To Fight",
+	Name = "Basketball Legends",
 	Description = nil, 
     	Callback = function()
       loadstring(game:HttpGet("https://pastefy.app/K8qxb4rn/raw", true))()
