@@ -65,6 +65,6 @@ local Button = Tab:CreateButton({
 	Name = "Basketball Legends",
 	Description = nil, 
     	Callback = function()
-      loadstring(game:HttpGet("https://pastefy.app/K8qxb4rn/raw", true))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/IAmJamal10/Basketball/refs/heads/main/Legends"))()
     	end
 })
