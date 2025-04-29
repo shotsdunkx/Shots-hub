@@ -96,3 +96,10 @@ local Button = Tab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Vvoidddd/Sentinel-Hub/refs/heads/main/Release/Loader.lua
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Infinite Yield (Admin Commands)",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    	end
+})
