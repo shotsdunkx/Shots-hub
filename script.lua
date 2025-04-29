@@ -90,6 +90,13 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
+	Name = "Hoopz",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/U410AZRJ/raw"))()
+    	end
+})
+local Button = Tab:CreateButton({
 	Name = "Infinite Yield (Admin Commands)",
 	Description = nil, 
     	Callback = function()
