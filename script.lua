@@ -83,13 +83,6 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
-	Name = "Muscle Legends",
-	Description = nil, 
-    	Callback = function()
-      loadstring(game:HttpGet(('https://pastebin.com/raw/j3wU2wx0'),true))()
-    	end
-})
-local Button = Tab:CreateButton({
 	Name = "Bubble Gum Simulator Infinity",
 	Description = nil, 
     	Callback = function()
@@ -101,5 +94,12 @@ local Button = Tab:CreateButton({
 	Description = nil, 
     	Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Muscle Legends",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet(('https://pastebin.com/raw/j3wU2wx0'),true))()
     	end
 })
