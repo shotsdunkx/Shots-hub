@@ -1,10 +1,9 @@
-local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/main/source.lua", true))()
 local Window = Luna:CreateWindow({
-	Name = "Shots Hub YOU ARE RESPONSIBLE FOR ALL BANS NOT ME", -- This Is Title Of Your Window
+	Name = "SHOTS HUB IS NOT RESPONSIBLE FOR ANY BANS", -- This Is Title Of Your Window
 	Subtitle = nil, -- A Gray Subtitle next To the main title.
-	LogoID = "81642162284795", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
+	LogoID = "82795327169782", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
 	LoadingEnabled = true, -- Whether to enable the loading animation. Set to false if you do not want the loading screen or have your own custom one.
-	LoadingTitle = "Shots Hub V2", -- Header for loading screen
+	LoadingTitle = "Shots Hub", -- Header for loading screen
 	LoadingSubtitle = "by Shots Dunkx", -- Subtitle for loading screen
 
 	ConfigSettings = {
