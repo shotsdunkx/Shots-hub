@@ -1,3 +1,4 @@
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/main/source.lua", true))()
 local Window = Luna:CreateWindow({
 	Name = "SHOTS HUB IS NOT RESPONSIBLE FOR ANY BANS", -- This Is Title Of Your Window
 	Subtitle = nil, -- A Gray Subtitle next To the main title.
