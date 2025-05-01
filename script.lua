@@ -86,7 +86,7 @@ local Button = Tab:CreateButton({
 	Name = "Bubble Gum Simulator Infinity",
 	Description = nil, 
     	Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Vvoidddd/Sentinel-Hub/refs/heads/main/Release/Loader.lua
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Vvoidddd/Sentinel-Hub/refs/heads/main/Release/Loader.lua"))()
     	end
 })
 local Button = Tab:CreateButton({
