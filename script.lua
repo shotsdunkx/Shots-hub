@@ -111,7 +111,7 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
-	Name = "Muscle Legends",
+	Name = "Brainrot Evolution",
 	Description = nil, 
     	Callback = function()
       loadstring(game:HttpGet("https://gist.githubusercontent.com/ScriptsForDays/c4b8eddc6bd3aa3c1a349e604adc5525/raw/70a02fc583deb64689932a8c1c873d6fd38afe23/Brainrot-Evo"))()
