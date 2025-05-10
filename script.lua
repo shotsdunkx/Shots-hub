@@ -124,3 +124,10 @@ local Button = Tab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/ameicaa1/Grow-a-Garden/main/Grow_A_Garden.lua"))()
     	end
 })
+local Button = Tab:CreateButton({
+	Name = "Death Ball",
+	Description = nil, 
+    	Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ExploiterDeathBall/AutoParry/refs/heads/main/AutoParryDeathBall'))()
+    	end
+})
