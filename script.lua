@@ -48,14 +48,14 @@ local Button = Tab:CreateButton({
     	end
 })
 local Button = Tab:CreateButton({
-	Name = "MM2 keyed",
+	Name = "MM2 Keyed",
 	Description = nil, 
     	Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
     	end
 })
 local Button = Tab:CreateButton({
-	Name = "MM2 keyless",
+	Name = "MM2 Keyless",
 	Description = nil, 
     	Callback = function()
       loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
