@@ -128,7 +128,7 @@ local Button = Tab:CreateButton({
 	Name = "Grow A Garden",
 	Description = nil, 
     	Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ameicaa1/Grow-a-Garden/main/Grow_A_Garden.lua"))()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8f14c1806369f8ae3db39eafc954d76d.lua"))()
     	end
 })
 local Button = Tab:CreateButton({
