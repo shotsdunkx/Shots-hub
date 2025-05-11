@@ -138,3 +138,4 @@ local Button = Tab:CreateButton({
       loadstring(game:HttpGet('https://raw.githubusercontent.com/ExploiterDeathBall/AutoParry/refs/heads/main/AutoParryDeathBall'))()
     	end
 })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shotsdunkx/bubblegumsim/refs/heads/main/bgsi"))()
